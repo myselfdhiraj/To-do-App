@@ -16,8 +16,9 @@ function listTask(text){
 
 btn.addEventListener('click',(text)=>{
     const input = document.querySelector('input').value;
-    // console.log(input)
-    listTask(input)
+    if(input !=''){
+        listTask(input)
+    }
 })
 
 list.addEventListener('click',(e)=>{
