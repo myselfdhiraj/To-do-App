@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #353535;
+    overflow-x: hidden;
+}
+.main .box{
+    margin: 5vh auto 0;
+    width: 500px;
+    height: auto;
+    min-height: 400px;
+    background-color: rgb(196, 196, 196);
+    
+}
+.main .box h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    margin: 15px auto;
+    color: rgb(255, 0, 85);
+}
+.main .box .row{
+    width: 90%;
+    margin: 10px auto;
+    height: 45px;
+    background-color: rgb(255, 0, 85);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.main .box .row input{
+    width: 80%;
+    height: 45px;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+}
+.main .box .row input::placeholder{
+    color: white;
+}
+.main .box .row button{
+    height: 35px;
+    border-radius: 30px;
+    width: 15%;
+    background-color: white;
+    font-size: 1.1rem;
+    color: black;
+    outline: 0;
+    border: 0;
+}
+.main .box .row button:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+.main .box .list{
+    width: 90%;
+    margin: 10px auto;
+    height: 100%;
+    /* background-color: #353535; */
+}
+.main .box .list ul{
+    width: 100%;
+    padding: 5px 15px;
+}
+.main .box .list ul li{
+    padding: 10px 40px;
+    list-style: none;
+    background-color: white;
+    margin: 5px ;
+    position: relative;
+}
+.main .box .list ul li::before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    background-image: url(./check_outer.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.main .box .list ul li.tick{
+    text-decoration: line-through;
+    color: #353535;
+}
+span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.main .box .list ul li.tick::before{
+    background-image: url(./check.png);
+}
